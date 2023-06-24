@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM CLOCK</title>
+    <!-- link for external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="main">
+            <!-- clock face to show the current time -->
+            <div id="clock-face"> </div>    
+                <!-- div for input fields of time, meridiem and button to set alarm -->
+            <div id="set-alarm">
+                <input id="input-time" type="time" step="3" required>
+                <input id="session" type="text" value="" required placeholder="AM/PM">
+                <button id="set" >Set Alarm</button>
+            </div>
+           <!-- list container where all setted alarms values (with delete button) came via script -->
+            <div id="list-container">
+                <span class="para">Your alarms:</span> 
+            </div>
+        </div>
+    </main>
+    <!-- external js file -->
+    <script src="script.js"></script>
+</body>
+</html>
